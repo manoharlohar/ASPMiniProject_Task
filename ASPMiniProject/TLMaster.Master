@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TLMaster.master.cs" Inherits="ASPMiniProject.TLMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 57%;
+            height: 635px;
+        }
+        .auto-style2 {
+            height: 154px;
+        }
+        .auto-style3 {
+            width: 993px;
+            height: 424px;
+        }
+        .auto-style4 {
+            width: 994px;
+            height: 345px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style2">
+                <img alt="" class="auto-style4" src="Content/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" /></td>
+        </tr>
+        <tr>
+            <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p class="auto-style3">
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>

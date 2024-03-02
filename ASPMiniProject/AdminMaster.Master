@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ASPMiniProject.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="Content/images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="Content/css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="Content/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="Content/css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="Content/css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="Content/css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="Content/css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="Content/css/custom.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.Content/js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/Content/css">
+        .auto-style1 {
+            width: 63%;
+            height: 948px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 498px;
+        }
+        .auto-style4 {
+            width: 533px;
+        }
+        .auto-style5 {
+            width: 643px;
+            height: 297px;
+        }
+        .auto-style6 {
+            width: 154px;
+            height: 83px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                   
+                 <!-- topbar -->
+               <div class="topbar" style="background-color:steelblue">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full" >
+                        <div class="logo_section" style="width:50px" >
+                           <a href="index.html"><img class="auto-style6" src="Content/Content/images/logo/logo.png" alt="#"  /></a>
+                        </div>
+                       <%-- <div class="right_topbar">
+                           <div class="icon_info">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
+                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li>
+                              </ul>
+                              <ul class="user_profile_dd">
+                                 <li>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="Content/images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="profile.html">My Profile</a>
+                                       <a class="dropdown-item" href="settings.html">Settings</a>
+                                       <a class="dropdown-item" href="help.html">Help</a>
+                                       <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>--%>
+                     </div>
+                  </nav>
+               </div>
+               <!-- end topbar -->
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="auto-style3">
+                        <tr>
+                            <td class="auto-style4">
+
+                                 <!-- Sidebar  -->
+            <nav id="sidebar">
+               
+               <div class="sidebar_blog_2">
+                
+                  <ul class="list-unstyled components">
+                    
+                   
+                     <li><a href="AllProjects.aspx" ><i class="fa fa-table purple_color2"></i> <span>All Projects</span></a></li>
+                    
+                     <li><a href="AssignProject.aspx"><i class="fa fa-briefcase blue1_color"></i> <span>Assign Project</span></a></li>
+                     <li>
+                        <a href="CompletedProjects.aspx">
+                        <i class="fa fa-paper-plane red_color"></i> <span>Completed Projects</span></a>
+                     </li>
+                    
+                     <li><a href="PaymentDetails.aspx"><i class="fa fa-map purple_color2"></i> <span>Payment Details</span></a></li>
+                     
+                  </ul>
+               </div>
+            </nav>
+
+
+
+
+                               <%-- <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px" OnMenuItemClick="Menu1_MenuItemClick">
+                                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                                    <DynamicMenuItemStyle Height="150px" HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                                    <DynamicSelectedStyle BackColor="#507CD1" />
+                                    <Items>
+                                        <asp:MenuItem Text="All Projects" Value="All Projects" NavigateUrl="~/AllProjects.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Assign Project" Value="Assign Project" NavigateUrl="~/AssignProject.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Completed Projects" Value="Completed Projects" NavigateUrl="~/CompletedProjects.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Payment Details" Value="Payment Details" NavigateUrl="~/PaymentDetails.aspx"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                                    <StaticMenuItemStyle Font-Bold="True" Height="50px" HorizontalPadding="5px" ItemSpacing="50px" VerticalPadding="20px" Width="200px" />
+                                    <StaticMenuStyle VerticalPadding="50px" />
+                                    <StaticSelectedStyle BackColor="#507CD1" />
+                                </asp:Menu>--%>
+                                </td>
+                            <td>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p class="auto-style5">
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+
+                                 <!-- jQuery -->
+      <script src="Content/js/jquery.min.js"></script>
+      <script src="Content/js/popper.min.js"></script>
+      <script src="Content/js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="Content/js/animate.js"></script>
+      <!-- select country -->
+      <script src="Content/js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="Content/js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="Content/js/Chart.min.js"></script>
+      <script src="Content/js/Chart.bundle.min.js"></script>
+      <script src="Content/js/utils.js"></script>
+      <script src="Content/js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="Content/js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="Content/js/custom.js"></script>
+      <script src="Content/js/chart_custom_style1.js"></script>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
